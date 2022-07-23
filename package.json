@@ -1,5 +1,5 @@
 {
-  "name": "@apostrophecms/module-template",
+  "name": "@apostrophecms/asset-es5",
   "version": "1.0.0",
   "description": "A template for creating an ApostropheCMS 3 module.",
   "main": "index.js",
@@ -15,6 +15,14 @@
   "homepage": "https://github.com/apostrophecms/module-template#readme",
   "author": "Apostrophe Technologies",
   "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "common-tags": "^1.8.2",
+    "core-js": "~3.14.0",
+    "regenerator-runtime": "^0.13.7"
+  },
   "devDependencies": {
     "eslint": "^7.9.0",
     "eslint-config-apostrophe": "^3.4.0",
