@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "apostrophe": "^3.0.0",
+    "@apostrophecms/asset-es5": "^1.0.0"
+  }
+}

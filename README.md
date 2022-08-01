@@ -42,7 +42,7 @@ npm install @apostrophecms/asset-es5
 
 ## Usage
 
-Enable the module in the `app.js` file:
+Enable this module in the `app.js` file:
 
 ```javascript
 require('apostrophe')({
