@@ -36,6 +36,10 @@ Think it over: are you sure you need this module?
 
 ## Installation
 
+**First update `apostrophe` to at least version `3.26.0`.** Prior to that release, there is no need for this module, since ES5 support was formerly included in the core.
+
+Then you can add this module:
+
 ```
 npm install @apostrophecms/asset-es5
 ```
