@@ -2,6 +2,7 @@
 const testUtil = require('apostrophe/test-lib/test');
 const fs = require('fs');
 const assert = require('assert');
+const cp = require('child_process');
 
 describe('@apostrophecms/asset-es5 module', function () {
   let apos;
@@ -53,12 +54,6 @@ describe('@apostrophecms/asset-es5 module', function () {
 });
 
 function cleanup() {
-  fs.rmSync(`${__dirname}/apos-build`, {
-    recursive: true,
-    force: true
-  });
-  fs.rmSync(`${__dirname}/public/apos-frontend`, {
-    recursive: true,
-    force: true
-  });
+  cp.execSync(`rm -rf ${__dirname}/apos-build`);
+  cp.execSync(`rm -rf ${__dirname}/public/apos-frontend`);
 }
