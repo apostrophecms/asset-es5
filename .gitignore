@@ -3,6 +3,10 @@
 package-lock.json
 *.DS_Store
 node_modules
+/test/node_modules
+/test/public
+/test/apos-build
+/test/data
 
 # Never commit a CSS map file, anywhere
 *.css.map

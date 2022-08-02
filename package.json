@@ -1,12 +1,12 @@
 {
-  "name": "@apostrophecms/module-template",
+  "name": "@apostrophecms/asset-es5",
   "version": "1.0.0",
   "description": "A template for creating an ApostropheCMS 3 module.",
   "main": "index.js",
   "scripts": {
     "lint": "npm run eslint",
     "eslint": "eslint .",
-    "test": "npm run lint"
+    "test": "npm run lint && mocha"
   },
   "repository": {
     "type": "git",
@@ -15,6 +15,14 @@
   "homepage": "https://github.com/apostrophecms/module-template#readme",
   "author": "Apostrophe Technologies",
   "license": "MIT",
+  "dependencies": {
+    "@babel/core": "^7.16.7",
+    "@babel/preset-env": "^7.16.7",
+    "babel-loader": "^8.2.5",
+    "common-tags": "^1.8.2",
+    "core-js": "~3.14.0",
+    "regenerator-runtime": "^0.13.7"
+  },
   "devDependencies": {
     "eslint": "^7.9.0",
     "eslint-config-apostrophe": "^3.4.0",
@@ -23,7 +31,7 @@
     "eslint-plugin-node": "^11.1.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1",
-    "stylelint": "^13.7.1",
-    "stylelint-config-apostrophe": "^1.0.0"
+    "apostrophe": "apostrophecms/apostrophe#pro-2932",
+    "mocha": "^10.0.0"
   }
 }
